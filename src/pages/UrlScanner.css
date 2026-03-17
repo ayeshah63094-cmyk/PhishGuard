@@ -1,0 +1,101 @@
+/* UrlScanner extending from MessageScanner styles for consistency */
+.url-input-wrapper .input-icon {
+  left: 1.2rem;
+  width: 24px;
+  height: 24px;
+}
+
+.analyze-input {
+  width: 100%;
+  background: rgba(17, 17, 20, 0.8);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  transition: all 0.3s ease;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.pl-12 {
+  padding-left: 3.5rem;
+}
+
+.text-lg {
+  font-size: 1.1rem;
+}
+
+.analyze-input:focus {
+  outline: none;
+  border-color: var(--accent-neon);
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.15);
+}
+
+.analyze-input:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+/* Analysis Details Grid */
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.analysis-card {
+  background: rgba(17, 17, 20, 0.5);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.analysis-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.analysis-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+}
+
+.analysis-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.text-safe {
+  color: #00ff80;
+}
+
+.text-suspicious {
+  color: #ffbf00;
+}
+
+.text-danger {
+  color: #ff3366;
+}
+
+/* Inherit status block colors from global/MessageScanner styles where applicable */
+.status-dangerous {
+  background: rgba(255, 51, 102, 0.1);
+  border: 1px solid rgba(255, 51, 102, 0.3);
+}
+
+.status-dangerous .status-icon, .status-dangerous .status-value, .status-dangerous .percentage {
+  color: #ff3366;
+}
+
+.stroke-dangerous { stroke: #ff3366; }

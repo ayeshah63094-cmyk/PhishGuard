@@ -1,0 +1,51 @@
+/* EmailAnalyzer adopting the global scanner page aesthetic */
+.email-textarea {
+  min-height: 250px;
+}
+
+.upload-section {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.btn-icon-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  background: transparent;
+  border: 1px dashed var(--border-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-icon-text:hover:not(:disabled) {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+  background: rgba(0, 136, 255, 0.05);
+}
+
+.btn-icon-text:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.email-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.status-phishing {
+  background: rgba(255, 51, 102, 0.1);
+  border: 1px solid rgba(255, 51, 102, 0.3);
+}
+
+.status-phishing .status-icon, .status-phishing .status-value, .status-phishing .percentage {
+  color: #ff3366;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
